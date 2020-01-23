@@ -8,6 +8,37 @@ const CustomModal = props => {
   const [movieDetails, setMovieDetails] = useState({});
   const [modal, setModal] = useState(true);
   const toggle = () => setModal(!modal);
+  
+  const MOCK_DATA = {
+	"Title":"ABC Africa",
+	"Year":"2001","Rated":
+	"Unrated","Released":"24 Oct 2001",
+	"Runtime":"83 min",
+	"Genre":"Documentary",
+	"Director":"Abbas Kiarostami",
+	"Writer":"N/A",
+	"Actors":"Abbas Kiarostami, Seifollah Samadian",
+	"Plot":"Documentary account of the AIDS crisis in Uganda.",
+	"Language":"Persian, English",
+	"Country":"Iran",
+	"Awards":"1 nomination.",
+	"Poster":"https://m.media-amazon.com/images/M/MV5BMTU5ODc1ODc2Ml5BMl5BanBnXkFtZTcwMzEyOTgyMQ@@._V1_SX300.jpg",
+	"Ratings":[
+	  {"Source":"Internet Movie Database","Value":"7.0/10"},
+	  {"Source":"Rotten Tomatoes","Value":"78%"},
+	  {"Source":"Metacritic","Value":"73/100"}
+	],
+	"Metascore":"73",
+	"imdbRating":"7.0",
+	"imdbVotes":"631",
+	"imdbID":"tt0281534",
+	"Type":"movie",
+	"DVD":"14 Jun 2005",
+	"BoxOffice":"N/A",
+	"Production":"New Yorker Films",
+	"Website":"N/A",
+	"Response":"True"
+  }
 
   useEffect(()=>{
     (async ()=>{
